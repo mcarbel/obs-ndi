@@ -27,7 +27,7 @@ In cmake-gui, you'll have to set these CMake variables:
 - **OBS_FRONTEND_LIB** (filepath) : location of the obs-frontend-api.lib file
 
 ### OS X - Part 1 - Qt6 Installation
-```
+
 Install Qt6 source
 ```
 
@@ -38,7 +38,7 @@ $ perl init-repository
 ```
 
 ### OS X - Part 2 - ods-ndi Installation
-```
+
 Compile ods-ndi
 ```
 git clone https://github.com/Palakis/obs-ndi.git
