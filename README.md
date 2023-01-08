@@ -53,6 +53,15 @@ Compile ods-ndi
 git clone https://github.com/Palakis/obs-ndi.git
 cd obs-ndi
 mkdir build && cd build
+
+# Qt6 Cmake path
+#/Users/otakoo/Dev/qt6-build/qtbase/lib/cmake/Qt6Core
+#/Users/otakoo/Dev/qt6-build/qtbase/lib/cmake/Qt6Widgets
+#OBS build File
+#<path to the libobs sub-folder in obs-studio's source code>      =/Users/<user>/Dev/obs-studio/build/libobs
+#<path to libobs.0.dylib>                                         =/Users/<user>/Dev/obs-studio/build/libobs
+#<path to libobs-frontend-api.dylib>                              =/Users/<user>/Dev/obs-studio/build/UI/obs-frontend-api
+
 cmake -DLIBOBS_INCLUDE_DIR=<path to the libobs sub-folder in obs-studio's source code> \
       -DLIBOBS_LIB=<path to libobs.0.dylib> \
       -DOBS_FRONTEND_LIB=<path to libobs-frontend-api.dylib> \
