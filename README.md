@@ -26,33 +26,18 @@ In cmake-gui, you'll have to set these CMake variables:
 - **LIBOBS_LIB** (filepath) : location of the obs.lib file
 - **OBS_FRONTEND_LIB** (filepath) : location of the obs-frontend-api.lib file
 
-### Linux
-On Debian/Ubuntu:
+### OS X - Part 1 - Qt6 Installation
 ```
-# Start by installing the latest libndi deb available [here](https://github.com/Palakis/obs-ndi/releases).
-git clone https://github.com/Palakis/obs-ndi.git
-cd obs-ndi
-mkdir build && cd build
-# If you are on Ubuntu, add the `-DUSE_UBUNTU_FIX=true` flag to your cmake command
-cmake -DLIBOBS_INCLUDE_DIR="<path to the libobs sub-folder in obs-studio's source code>" 
-      -DCMAKE_INSTALL_PREFIX=/usr ..
-make -j4
-sudo make install
-```
-
-### OS X
 Install Qt6 source
 ```
-
-
 
 $ git clone git://code.qt.io/qt/qt5.git qt6
 $ cd qt6
 $ git switch dev
 $ perl init-repository
+```
 
-
-
+### OS X - Part 2 - ods-ndi Installation
 ```
 Compile ods-ndi
 ```
