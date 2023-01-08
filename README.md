@@ -39,8 +39,8 @@ $ perl init-repository
 
 # Configuring and Compiling
 
-$ mkdir qt6-build && cd qt6-build
-$ ../qt6/configure -prefix /path/to/install
+$ cd .. && mkdir qt6-build && cd qt6-build
+$ ../qt6/configure -prefix .
 $ cmake --build . --parallel 4
 $ cmake --install .
 
