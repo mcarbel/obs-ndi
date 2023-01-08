@@ -30,11 +30,20 @@ In cmake-gui, you'll have to set these CMake variables:
 
 Install Qt6 source
 ```
+# Getting the source code
 
 $ git clone git://code.qt.io/qt/qt5.git qt6
 $ cd qt6
 $ git switch dev
 $ perl init-repository
+
+# Configuring and Compiling
+
+$ mkdir qt6-build && cd qt6-build
+$ ../qt6/configure -prefix /path/to/install
+$ cmake --build . --parallel 4
+$ cmake --install .
+
 ```
 
 ### OS X - Part 2 - ods-ndi Installation
