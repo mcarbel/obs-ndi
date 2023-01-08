@@ -34,7 +34,8 @@ git clone https://github.com/Palakis/obs-ndi.git
 cd obs-ndi
 mkdir build && cd build
 # If you are on Ubuntu, add the `-DUSE_UBUNTU_FIX=true` flag to your cmake command
-cmake -DLIBOBS_INCLUDE_DIR="<path to the libobs sub-folder in obs-studio's source code>" -DCMAKE_INSTALL_PREFIX=/usr ..
+cmake -DLIBOBS_INCLUDE_DIR="<path to the libobs sub-folder in obs-studio's source code>" 
+      -DCMAKE_INSTALL_PREFIX=/usr ..
 make -j4
 sudo make install
 ```
